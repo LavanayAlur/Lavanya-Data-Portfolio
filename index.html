@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinay | Data Analyst Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      padding: 72px 0 32px;
+    }
+    h1, h2, h3 { margin-top: 0; }
+    h1 { font-size: 2.7rem; margin-bottom: 12px; }
+    h2 { font-size: 1.8rem; margin-bottom: 16px; }
+    .subtitle {
+      color: var(--muted);
+      max-width: 720px;
+      font-size: 1.05rem;
+    }
+    .buttons {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #0b1220;
+    }
+    .btn.primary {
+      background: var(--accent);
+      color: #082f49;
+      font-weight: bold;
+      border-color: var(--accent);
+    }
+    section {
+      padding: 28px 0;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: rgba(17, 24, 39, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      margin: 4px 6px 0 0;
+      border-radius: 999px;
+      background: #0b1220;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      font-size: 0.85rem;
+    }
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 14px;
+      font-weight: bold;
+    }
+    ul { padding-left: 20px; }
+    .footer {
+      color: var(--muted);
+      padding: 36px 0 60px;
+      font-size: 0.95rem;
+    }
+    .highlight { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <p>DATA ANALYST PORTFOLIO</p>
+      <h1>Hi, I'm <span class="highlight">Vinay</span></h1>
+      <p class="subtitle">
+        I build data projects that turn raw data into clear insights, dashboards, and business decisions.
+        My work focuses on SQL, Excel, Python, Power BI, and practical analytics for real business problems.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/yourusername" target="_blank">View GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a class="btn" href="mailto:yourmail@example.com">Contact Me</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am a data analyst focused on solving business problems with structured analysis, data cleaning,
+          dashboarding, KPI tracking, and storytelling. I enjoy working on projects involving customer behavior,
+          operations, finance, productivity, and automation.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <span class="tag">SQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Power BI</span>
+        <span class="tag">Pandas</span>
+        <span class="tag">Data Cleaning</span>
+        <span class="tag">Visualization</span>
+        <span class="tag">Dashboard Design</span>
+        <span class="tag">Business Analysis</span>
+        <span class="tag">Automation</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sales Performance Dashboard</h3>
+          <p>Interactive dashboard analyzing revenue, profit, region-wise performance, and product trends.</p>
+          <ul>
+            <li>Built KPI dashboard for monthly performance review</li>
+            <li>Identified top products and low-margin segments</li>
+            <li>Recommended actions to improve profitability</li>
+          </ul>
+          <p><strong>Tools:</strong> Power BI, Excel, SQL</p>
+          <div class="project-links">
+            <a href="#">GitHub Repo</a>
+            <a href="#">Live Dashboard / Screenshots</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Customer Churn Analysis</h3>
+          <p>Analyzed customer behavior to identify churn drivers and support retention decisions.</p>
+          <ul>
+            <li>Cleaned and explored customer activity data</li>
+            <li>Found patterns across tenure, support calls, and subscription plans</li>
+            <li>Presented actionable retention insights</li>
+          </ul>
+          <p><strong>Tools:</strong> Python, Pandas, Matplotlib, Jupyter</p>
+          <div class="project-links">
+            <a href="#">GitHub Repo</a>
+            <a href="#">Case Study</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>HR Analytics Dashboard</h3>
+          <p>Tracked employee training completion, compliance status, and department-level KPIs.</p>
+          <ul>
+            <li>Created calculated metrics and completion views</li>
+            <li>Designed dashboard for management reporting</li>
+            <li>Improved visibility of overdue training actions</li>
+          </ul>
+          <p><strong>Tools:</strong> Excel, Power BI</p>
+          <div class="project-links">
+            <a href="#">GitHub Repo</a>
+            <a href="#">Screenshots</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How I Work</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>1. Understand the problem</h3>
+          <p>Define the business question, users, KPIs, and expected decisions.</p>
+        </div>
+        <div class="card">
+          <h3>2. Prepare the data</h3>
+          <p>Clean, transform, validate, and structure the data for reliable analysis.</p>
+        </div>
+        <div class="card">
+          <h3>3. Deliver insights</h3>
+          <p>Build dashboards, summarize findings, and recommend actions clearly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: lavanyahassan195@gmail.com</p>
+        <p>GitHub: github.com/LavanyaAlur</p>
+        <p>LinkedIn: https://www.linkedin.com/in/lavanya-alur-mallesha-185378233/</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Lavanya-Data-Portfolio</p>
+    </footer>
+  </div>
+</body>
+</html>
